@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+    <title>Tela de Acesso - Teste</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Entrar</h1>
+        <div id="msgError"></div>
+        <div class="label-float">
+          <input type="text" id="usuario" placeholder="" required />
+          <label id="userLabel" for="usuario">Usuário</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="senha" placeholder="" required />
+          <label id="senhaLabel" for="senha">Senha</label>
+          <i class="fa fa-eye olho" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="entrar();">Entrar</button>
+        </div>
+
+        <div class="justify-center"><hr /></div>
+
+        <div class="justify-center">
+          <p>Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/general.js"></script>
+  </body>
+</html>
